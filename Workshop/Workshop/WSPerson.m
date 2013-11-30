@@ -1,19 +1,19 @@
 //
-//  Person.m
+//  WSPerson.m
 //  Workshop
 //
 //  Created by Hugo Tunius on 30/11/13.
 //  Copyright (c) 2013 Hugo Tunius. All rights reserved.
 //
 
-#import "Person.h"
+#import "WSPerson.h"
 
 
-@implementation Person
+@implementation WSPerson
 
+@dynamic dateOfBirth;
 @dynamic firstName;
 @dynamic lastName;
-@dynamic dateOfBirth;
 @dynamic phoneNumber;
 
 @end

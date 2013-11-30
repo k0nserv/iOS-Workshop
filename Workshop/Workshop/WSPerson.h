@@ -1,5 +1,5 @@
 //
-//  Person.h
+//  WSPerson.h
 //  Workshop
 //
 //  Created by Hugo Tunius on 30/11/13.
@@ -10,11 +10,11 @@
 #import <CoreData/CoreData.h>
 
 
-@interface Person : NSManagedObject
+@interface WSPerson : NSManagedObject
 
+@property (nonatomic, retain) NSString * dateOfBirth;
 @property (nonatomic, retain) NSString * firstName;
 @property (nonatomic, retain) NSString * lastName;
-@property (nonatomic, retain) NSString * dateOfBirth;
 @property (nonatomic, retain) NSString * phoneNumber;
 
 @end

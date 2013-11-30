@@ -26,6 +26,7 @@
 		D6E24C45184A822B00F41F56 /* WSPerson+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E24C44184A822B00F41F56 /* WSPerson+Utilities.m */; };
 		D6E24C47184A825D00F41F56 /* WSPerson+UtilitiesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E24C46184A825D00F41F56 /* WSPerson+UtilitiesTest.m */; };
 		D6E24C4A184A848000F41F56 /* WSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E24C49184A848000F41F56 /* WSPerson.m */; };
+		D6E24C4D184A850E00F41F56 /* WSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E24C4C184A850E00F41F56 /* WSMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		D6E24C46184A825D00F41F56 /* WSPerson+UtilitiesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WSPerson+UtilitiesTest.m"; sourceTree = "<group>"; };
 		D6E24C48184A848000F41F56 /* WSPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPerson.h; sourceTree = "<group>"; };
 		D6E24C49184A848000F41F56 /* WSPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPerson.m; sourceTree = "<group>"; };
+		D6E24C4B184A850E00F41F56 /* WSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSMainViewController.h; sourceTree = "<group>"; };
+		D6E24C4C184A850E00F41F56 /* WSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,8 @@
 				D64D9A73184A7F83001DF404 /* Storyboard.storyboard */,
 				D6E24C43184A822B00F41F56 /* WSPerson+Utilities.h */,
 				D6E24C44184A822B00F41F56 /* WSPerson+Utilities.m */,
+				D6E24C4B184A850E00F41F56 /* WSMainViewController.h */,
+				D6E24C4C184A850E00F41F56 /* WSMainViewController.m */,
 			);
 			path = Workshop;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 				D64D9A4B184A7E15001DF404 /* WSAppDelegate.m in Sources */,
 				D6E24C4A184A848000F41F56 /* WSPerson.m in Sources */,
 				D64D9A47184A7E15001DF404 /* main.m in Sources */,
+				D6E24C4D184A850E00F41F56 /* WSMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

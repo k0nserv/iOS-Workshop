@@ -23,8 +23,9 @@
 		D64D9A62184A7E15001DF404 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D64D9A60184A7E15001DF404 /* InfoPlist.strings */; };
 		D64D9A64184A7E15001DF404 /* WorkshopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D64D9A63184A7E15001DF404 /* WorkshopTests.m */; };
 		D64D9A74184A7F83001DF404 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D64D9A73184A7F83001DF404 /* Storyboard.storyboard */; };
-		D6E24C3C184A812900F41F56 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E24C3B184A812900F41F56 /* Person.m */; };
-		D6E24C3F184A814700F41F56 /* WSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E24C3E184A814700F41F56 /* WSPerson.m */; };
+		D6E24C45184A822B00F41F56 /* WSPerson+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E24C44184A822B00F41F56 /* WSPerson+Utilities.m */; };
+		D6E24C47184A825D00F41F56 /* WSPerson+UtilitiesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E24C46184A825D00F41F56 /* WSPerson+UtilitiesTest.m */; };
+		D6E24C4A184A848000F41F56 /* WSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E24C49184A848000F41F56 /* WSPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,10 +58,11 @@
 		D64D9A61184A7E15001DF404 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D64D9A63184A7E15001DF404 /* WorkshopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkshopTests.m; sourceTree = "<group>"; };
 		D64D9A73184A7F83001DF404 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		D6E24C3A184A812900F41F56 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		D6E24C3B184A812900F41F56 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		D6E24C3D184A814700F41F56 /* WSPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPerson.h; sourceTree = "<group>"; };
-		D6E24C3E184A814700F41F56 /* WSPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPerson.m; sourceTree = "<group>"; };
+		D6E24C43184A822B00F41F56 /* WSPerson+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WSPerson+Utilities.h"; sourceTree = "<group>"; };
+		D6E24C44184A822B00F41F56 /* WSPerson+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WSPerson+Utilities.m"; sourceTree = "<group>"; };
+		D6E24C46184A825D00F41F56 /* WSPerson+UtilitiesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WSPerson+UtilitiesTest.m"; sourceTree = "<group>"; };
+		D6E24C48184A848000F41F56 /* WSPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPerson.h; sourceTree = "<group>"; };
+		D6E24C49184A848000F41F56 /* WSPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,13 +128,13 @@
 				D64D9A49184A7E15001DF404 /* WSAppDelegate.h */,
 				D64D9A4A184A7E15001DF404 /* WSAppDelegate.m */,
 				D64D9A4F184A7E15001DF404 /* Images.xcassets */,
+				D6E24C48184A848000F41F56 /* WSPerson.h */,
+				D6E24C49184A848000F41F56 /* WSPerson.m */,
 				D64D9A4C184A7E15001DF404 /* Workshop.xcdatamodeld */,
-				D6E24C3D184A814700F41F56 /* WSPerson.h */,
-				D6E24C3E184A814700F41F56 /* WSPerson.m */,
-				D6E24C3A184A812900F41F56 /* Person.h */,
-				D6E24C3B184A812900F41F56 /* Person.m */,
 				D64D9A41184A7E15001DF404 /* Supporting Files */,
 				D64D9A73184A7F83001DF404 /* Storyboard.storyboard */,
+				D6E24C43184A822B00F41F56 /* WSPerson+Utilities.h */,
+				D6E24C44184A822B00F41F56 /* WSPerson+Utilities.m */,
 			);
 			path = Workshop;
 			sourceTree = "<group>";
@@ -153,6 +155,7 @@
 			children = (
 				D64D9A63184A7E15001DF404 /* WorkshopTests.m */,
 				D64D9A5E184A7E15001DF404 /* Supporting Files */,
+				D6E24C46184A825D00F41F56 /* WSPerson+UtilitiesTest.m */,
 			);
 			path = WorkshopTests;
 			sourceTree = "<group>";
@@ -264,9 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D64D9A4E184A7E15001DF404 /* Workshop.xcdatamodeld in Sources */,
+				D6E24C45184A822B00F41F56 /* WSPerson+Utilities.m in Sources */,
 				D64D9A4B184A7E15001DF404 /* WSAppDelegate.m in Sources */,
-				D6E24C3C184A812900F41F56 /* Person.m in Sources */,
-				D6E24C3F184A814700F41F56 /* WSPerson.m in Sources */,
+				D6E24C4A184A848000F41F56 /* WSPerson.m in Sources */,
 				D64D9A47184A7E15001DF404 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D64D9A64184A7E15001DF404 /* WorkshopTests.m in Sources */,
+				D6E24C47184A825D00F41F56 /* WSPerson+UtilitiesTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

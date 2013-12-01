@@ -14,6 +14,8 @@
 }
 
 - (NSString*)  firstCharacterInFirstName {
+    if (self.firstName.length == 0) { return nil; }
+    
     return [self.firstName substringToIndex:1];
 }
 @end

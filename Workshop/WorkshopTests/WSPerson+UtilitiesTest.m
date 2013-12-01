@@ -46,4 +46,21 @@
     
     XCTAssertEqualObjects(fullName, expected);
 }
+
+- (void) testFirstCharacterInFirstName {
+    WSPerson *person        = [NSEntityDescription insertNewObjectForEntityForName:@"WSPerson" inManagedObjectContext:self.moc];
+    NSArray *names          = @[@"test", @"t", @"hello"];
+    NSString *emptyName     = @"";
+    
+    for (NSString *name in names) {
+        person.firstName = name;
+        XCTAssertEqualObjects([person firstCharacterInFirstName], [name substringToIndex:1]);
+    }
+    
+    person.firstName = emptyName;
+    XCTAssertNil([person firstCharacterInFirstName]);
+    
+    person.firstName = nil;
+    XCTAssertNil([person firstCharacterInFirstName]);
+}
 @end

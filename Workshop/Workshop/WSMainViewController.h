@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WSMainViewController : UITableViewController
+@interface WSMainViewController : UITableViewController<NSFetchedResultsControllerDelegate>
 
 @end

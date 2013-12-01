@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D641C17D184B447000BDCB05 /* WSAddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D641C17C184B447000BDCB05 /* WSAddContactViewController.m */; };
 		D64D9A39184A7E15001DF404 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64D9A38184A7E15001DF404 /* Foundation.framework */; };
 		D64D9A3B184A7E15001DF404 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64D9A3A184A7E15001DF404 /* CoreGraphics.framework */; };
 		D64D9A3D184A7E15001DF404 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64D9A3C184A7E15001DF404 /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D641C17B184B447000BDCB05 /* WSAddContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSAddContactViewController.h; sourceTree = "<group>"; };
+		D641C17C184B447000BDCB05 /* WSAddContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSAddContactViewController.m; sourceTree = "<group>"; };
 		D64D9A35184A7E15001DF404 /* Workshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D64D9A38184A7E15001DF404 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D64D9A3A184A7E15001DF404 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -140,6 +143,8 @@
 				D6E24C44184A822B00F41F56 /* WSPerson+Utilities.m */,
 				D6E24C4B184A850E00F41F56 /* WSMainViewController.h */,
 				D6E24C4C184A850E00F41F56 /* WSMainViewController.m */,
+				D641C17B184B447000BDCB05 /* WSAddContactViewController.h */,
+				D641C17C184B447000BDCB05 /* WSAddContactViewController.m */,
 			);
 			path = Workshop;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D64D9A4E184A7E15001DF404 /* Workshop.xcdatamodeld in Sources */,
+				D641C17D184B447000BDCB05 /* WSAddContactViewController.m in Sources */,
 				D6E24C45184A822B00F41F56 /* WSPerson+Utilities.m in Sources */,
 				D64D9A4B184A7E15001DF404 /* WSAppDelegate.m in Sources */,
 				D6E24C4A184A848000F41F56 /* WSPerson.m in Sources */,

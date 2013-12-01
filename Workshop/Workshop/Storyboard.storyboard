@@ -8,7 +8,7 @@
         <scene sceneID="yvZ-ue-Ybv">
             <objects>
                 <tableViewController id="FDT-lo-zC0" customClass="WSMainViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1wN-3z-W52">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1wN-3z-W52">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -51,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="729" y="121"/>
         </scene>
-        <!--Table View Controller - Lägg till kontakt-->
+        <!--Add Contact View Controller - Lägg till kontakt-->
         <scene sceneID="Tsj-ok-oKD">
             <objects>
-                <tableViewController id="h6a-An-xEL" sceneMemberID="viewController">
+                <tableViewController id="h6a-An-xEL" customClass="WSAddContactViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="L2G-NZ-Jyz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,7 +73,7 @@
                                                     <rect key="frame" x="20" y="0.0" width="280" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -89,7 +89,7 @@
                                                     <rect key="frame" x="20" y="0.0" width="280" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -105,7 +105,7 @@
                                                     <rect key="frame" x="20" y="0.0" width="280" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -119,8 +119,17 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Lägg till kontakt" id="B2Y-iY-Eqr">
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="JyP-C4-ang"/>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="JyP-C4-ang">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="h6a-An-xEL" id="ahF-Gm-mbR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="firstNameCell" destination="FKk-Dc-x4k" id="zDN-7B-Njg"/>
+                        <outlet property="lastNameCell" destination="QbJ-zA-6jR" id="GPO-fC-bcs"/>
+                        <outlet property="phoneNumberCell" destination="wVV-32-mfS" id="lkN-Rw-sjn"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zFA-hf-yuG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

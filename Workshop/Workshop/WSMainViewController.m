@@ -43,7 +43,7 @@
     self.resultController = [[NSFetchedResultsController alloc]
                                     initWithFetchRequest:fetchRequest
                                     managedObjectContext:context
-                                      sectionNameKeyPath:nil
+                                      sectionNameKeyPath:@"firstCharacterInFirstName"
                                                cacheName:@"WSPersonCache"];
     
     NSError *error;

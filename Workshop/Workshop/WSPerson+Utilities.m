@@ -12,4 +12,8 @@
 - (NSString*) fullName {
     return [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
 }
+
+- (NSString*)  firstCharacterInFirstName {
+    return [self.firstName substringToIndex:1];
+}
 @end

@@ -10,4 +10,5 @@
 
 @interface WSPerson (Utilities)
 - (NSString*) fullName;
+- (NSString*) firstCharacterInFirstName;
 @end

@@ -99,6 +99,12 @@
     return [self.resultController sectionForSectionIndexTitle:title atIndex:index];
 }
 
+- (void) tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+    WSPerson *person = [self.resultController objectAtIndexPath:indexPath];
+    NSString *number = [@"tel://" stringByAppendingString:person.phoneNumber];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:number]];
+}
+
 - (void) configureCell:(UITableViewCell*)cell atIndexPath:(NSIndexPath*)indexPath {
     WSPerson *person = [self.resultController objectAtIndexPath:indexPath];
     cell.textLabel.text         = [person fullName];
